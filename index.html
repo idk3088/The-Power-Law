@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>《风险投资史》展示讲解</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">PL</span>
+        <span>风险投资史</span>
+      </a>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="#overview">总览</a>
+        <a href="#timeline">脉络</a>
+        <a href="#chapters">章节</a>
+        <a href="#talk">讲解</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Sebastian Mallaby · The Power Law</p>
+          <h1>《风险投资史》展示讲解</h1>
+          <p class="hero-lede">
+            这本书不是简单讲“谁投中了哪家公司”，而是在解释一种金融制度如何把资本、人才、技术和野心组织到一起，最终改变创新的速度与方向。
+          </p>
+          <div class="hero-actions" aria-label="快速跳转">
+            <a class="primary-action" href="#chapters">查看章节概括</a>
+            <a class="secondary-action" href="#talk">演讲提纲</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/power-law-hero.svg" alt="" />
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Core argument</p>
+          <h2>一句话读懂全书</h2>
+        </div>
+        <div class="thesis-panel">
+          <p>
+            风险投资的核心不是“稳健选股”，而是在高度不确定的技术世界里寻找少数极端赢家。因为回报服从幂律分布，风险投资人必须用网络、判断力、治理和耐心去捕捉那些可能改变整个市场的异常值。
+          </p>
+        </div>
+        <div class="overview-grid">
+          <article>
+            <span>01</span>
+            <h3>指数法则</h3>
+            <p>一两家公司可能贡献整只基金的大部分收益，所以“避免失败”不如“拥有超级赢家”重要。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>解放资本</h3>
+            <p>资本让科学家和工程师从大公司、银行和等级制度中脱身，把技术可能性变成创业实验。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>网络优势</h3>
+            <p>顶级 VC 不只给钱，还连接人才、客户、董事会、下一轮融资和退出渠道。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>全球复制</h3>
+            <p>硅谷模式从美国扩散到中国、印度、以色列等市场，但每个地区都会重新塑造它。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Narrative arc</p>
+          <h2>全书讲解主线</h2>
+        </div>
+        <div class="timeline" id="timelineList"></div>
+      </section>
+
+      <section id="chapters" class="section">
+        <div class="section-heading chapter-heading">
+          <div>
+            <p class="eyebrow">Chapter guide</p>
+            <h2>章节概括</h2>
+          </div>
+          <div class="tools">
+            <input id="chapterSearch" type="search" placeholder="搜索章节、人物、公司" aria-label="搜索章节" />
+            <select id="chapterFilter" aria-label="按阶段筛选">
+              <option value="all">全部阶段</option>
+              <option value="origin">起源与制度</option>
+              <option value="network">网络与专业化</option>
+              <option value="internet">互联网浪潮</option>
+              <option value="global">全球化与反思</option>
+            </select>
+          </div>
+        </div>
+        <div id="chapterGrid" class="chapter-grid"></div>
+      </section>
+
+      <section id="talk" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Presentation plan</p>
+          <h2>展示讲解提纲</h2>
+        </div>
+        <div class="talk-layout">
+          <article class="talk-card">
+            <h3>5 分钟开场</h3>
+            <p>用“不可能食品”和科斯拉的案例引出问题：为什么理性投资人会投看似疯狂的项目？答案是风险投资面对的不是正态分布，而是指数法则。</p>
+          </article>
+          <article class="talk-card">
+            <h3>10 分钟历史线</h3>
+            <p>从“八叛将”和仙童半导体讲到有限合伙制、红杉和凯鹏华盈，突出风险投资从偶然交易变成制度化行业的过程。</p>
+          </article>
+          <article class="talk-card">
+            <h3>10 分钟案例线</h3>
+            <p>选 Apple、Yahoo、Google、Facebook、中国互联网作为主案例，说明 VC 如何在技术、市场和治理之间改变公司命运。</p>
+          </article>
+          <article class="talk-card">
+            <h3>5 分钟讨论</h3>
+            <p>回到今天：独角兽泡沫、闪电式扩张、多样性不足和监管问题，讨论风险投资到底是在创造未来，还是放大赢家通吃。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>基于《风险投资史》内容整理，用于课堂、读书会或投资研究展示。</p>
+      <a href="#top">返回顶部</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
